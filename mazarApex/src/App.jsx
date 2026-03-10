@@ -85,7 +85,7 @@ function Hero() {
       </div>
 
       <h1 className="hero__headline">
-        <span className="hero__line hero__line--1">SOMETHING ELSE</span>
+        <span className="hero__line hero__line--1">WE HELP</span>
         <span className="hero__line hero__line--2">LOCAL<span className="hero__outline"> BUSINESSES</span></span>
         <span className="hero__line hero__line--3">GENERATE</span>
         <span className="hero__line hero__line--4">MORE <span className="hero__accent">LEADS.</span></span>
