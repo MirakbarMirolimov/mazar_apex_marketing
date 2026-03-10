@@ -150,13 +150,15 @@ input, textarea { font-family: var(--font-body); }
   justify-content: space-between;
 }
 .nav__logo {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  letter-spacing: 0.08em;
-  color: var(--chalk);
   line-height: 1;
+  padding: 0;
 }
-.nav__logo-apex { color: var(--electric); margin-left: 4px; }
+.nav__logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
 .nav__menu {
   display: flex;
   align-items: center;
@@ -647,13 +649,13 @@ input, textarea { font-family: var(--font-body); }
   flex-wrap: wrap;
   gap: 16px;
 }
-.footer__logo {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  letter-spacing: 0.08em;
-  color: var(--chalk);
+.footer__logo { line-height: 1; }
+.footer__logo-img {
+  height: 30px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
-.footer__logo span { color: var(--electric); margin-left: 4px; }
 .footer__copy { font-size: 0.8rem; color: var(--chalk3); }
 .footer__tag { font-size: 0.75rem; color: rgba(160,154,144,0.4); font-style: italic; }
 

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import brandLogo from "./assets/brandLogo.png";
 import "./App.css";
 
 /* ─── Reveal hook ─────────────────────────────────────────────────────────── */
@@ -47,7 +48,7 @@ function Nav() {
     <nav className={`nav ${scrolled ? "nav--solid" : ""}`}>
       <div className="nav__wrap">
         <button className="nav__logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          MAZAR<span className="nav__logo-apex">APEX</span>
+          <img src={brandLogo} alt="Mazar Apex" className="nav__logo-img" />
         </button>
         <div className={`nav__menu ${open ? "nav__menu--open" : ""}`}>
           {["services", "process", "contact"].map(id => (
@@ -80,11 +81,11 @@ function Hero() {
     <section className="hero">
       <div className="hero__eyebrow">
         <span className="hero__tag">— Est. Performance Agency</span>
-        <span className="hero__tag">Virginia, USA</span>
+        <span className="hero__tag">Maryland, USA</span>
       </div>
 
       <h1 className="hero__headline">
-        <span className="hero__line hero__line--1">WE HELP</span>
+        <span className="hero__line hero__line--1">SOMETHING ELSE</span>
         <span className="hero__line hero__line--2">LOCAL<span className="hero__outline"> BUSINESSES</span></span>
         <span className="hero__line hero__line--3">GENERATE</span>
         <span className="hero__line hero__line--4">MORE <span className="hero__accent">LEADS.</span></span>
@@ -298,12 +299,12 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__inner">
-        <div className="footer__logo">MAZAR<span>APEX</span></div>
+        <div className="footer__logo"><img src={brandLogo} alt="Mazar Apex" className="footer__logo-img" /></div>
         <p className="footer__copy">© {new Date().getFullYear()} Mazar Apex Marketing. All rights reserved.</p>
         <p className="footer__tag">Helping local businesses grow with paid ads.</p>
       </div>
     </footer>
-  );
+  );f
 }
 
 /* ─── App ─────────────────────────────────────────────────────────────────── */
